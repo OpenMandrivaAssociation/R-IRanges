@@ -9,12 +9,9 @@ Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-utils R-stats 
-Requires:         R-methods R-utils R-stats 
-Requires:         R-RUnit 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-stats
-BuildRequires:    R-methods R-utils R-stats 
-BuildRequires:    R-RUnit 
+Requires:         R-methods R-utils R-stats R-RUnit
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-methods R-utils R-stats R-RUnit
 
 %description
 The package provides efficient low-level and highly reusable S4 classes
