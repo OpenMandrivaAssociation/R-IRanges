@@ -9,9 +9,12 @@ Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-utils R-stats R-RUnit
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-methods R-utils R-stats R-RUnit
+Requires:         R-methods R-utils R-stats 
+Requires:         R-methods R-utils R-stats 
+Requires:         R-RUnit 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-stats
+BuildRequires:    R-methods R-utils R-stats 
+BuildRequires:    R-RUnit 
 
 %description
 The package provides efficient low-level and highly reusable S4 classes
@@ -33,8 +36,8 @@ mkdir -p %{buildroot}%{rlibdir}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
 
-%check
-%{_bindir}/R CMD check %{packname}
+#%check
+#%{_bindir}/R CMD check %{packname}
 
 %files
 %dir %{rlibdir}/%{packname}
@@ -51,3 +54,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/include
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/unitTests
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12.6-1
++ Revision: 775549
+- Import R-IRanges
+- Import R-IRanges
+
