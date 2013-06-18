@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.12.6
-Release:          1
+Release:          2
 Summary:          Infrastructure for manipulating intervals on sequences
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
