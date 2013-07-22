@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.16.5
-Release:          1
+Release:          2
 Summary:          Infrastructure for manipulating intervals on sequences
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
@@ -12,6 +12,7 @@ Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/IRan
 Requires:         R-methods R-utils R-stats 
 Requires:         R-methods R-utils R-stats 
 Requires:         R-RUnit 
+Requires:         R-BiocGenerics
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-stats
 BuildRequires:    R-methods R-utils R-stats 
 BuildRequires:    R-RUnit
