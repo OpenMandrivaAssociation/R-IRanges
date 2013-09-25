@@ -2,19 +2,18 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.16.5
-Release:          2
+Version:          1.18.3
+Release:          1
 Summary:          Infrastructure for manipulating intervals on sequences
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/IRanges_1.16.5.tar.gz
-Requires:         R-methods R-utils R-stats 
-Requires:         R-methods R-utils R-stats 
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/IRanges_1.18.3.tar.gz
+Requires:         R-methods R-utils R-stats
 Requires:         R-RUnit 
-Requires:         R-BiocGenerics
+Requires:	  R-BiocGenerics
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-stats
-BuildRequires:    R-methods R-utils R-stats 
+BuildRequires:    R-methods R-utils R-stats
 BuildRequires:    R-RUnit
 BuildRequires:    R-BiocGenerics
 
@@ -63,5 +62,6 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775549
 - Import R-IRanges
 - Import R-IRanges
+
 
 
